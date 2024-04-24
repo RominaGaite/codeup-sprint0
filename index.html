@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <title>Lista de Tareas</title>
+
+</head>
+
+<body>
+    <div class="add">
+        <input type="text" id="taskInput" placeholder="Nueva tarea">
+        <button class="btnAdd" onclick="addTask()">Agregar</button>
+    </div>
+    <div class="list">
+        <ul id="taskList"></ul>
+    </div>
+
+
+    <div class="show">
+        <div class="contentShow">
+            <button class="btnShow" onclick="showDeletedTasks()">Ver Tareas Eliminadas</button>
+            <ul id="deletedTaskList" style="display:none;"></ul>
+        </div>
+
+        <div class="contentShow">
+            <button class="btnShow" onclick="showCompletedTasks()">Ver Tareas Realizadas</button>
+            <ul id="completedTaskList" style="display:none;"></ul>
+        </div>
+
+        <div class="contentShow">
+            <button class="btnShow" onclick="showAllTasks()">Ver Todas las Tareas</button>
+            <ul id="allTaskList" style="display:none;"></ul>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
